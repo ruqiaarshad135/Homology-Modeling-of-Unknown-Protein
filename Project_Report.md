@@ -30,6 +30,8 @@ MPLRAPQDNTIIVKYFCIVACVCGVLFLLTRDNLPHIGDQTHSFKHGGFYQDGTKRAVYC
 GPRRNNPSSNLFSGLGSTFWIVTIFTLCLIYATRRSVSNRRYSCTCFHFLCCDCAPVTAA
 ```
 
+![Predicted Secondary Structure](secondary_structure.png)
+
 ---
 
 ## 3.0 Structure Prediction & Initial Validation
@@ -73,6 +75,8 @@ GPRRNNPSSNLFSGLGSTFWIVTIFTLCLIYATRRSVSNRRYSCTCFHFLCCDCAPVTAA
 
 *(Note: MODELLER was also tested, but NCBI BLAST yielded no significant orthologs for template selection).*
 
+![Initial Robetta 3D Model](robetta_initial.png)
+
 ---
 
 ## 4.0 Final Model Selection & Refinement Process
@@ -107,7 +111,11 @@ The GalaxyRefine pipeline provided the most structurally sound model. The final 
 | **Bad angles** | 0.91% | < 0.1% |
 | **Cis Prolines** | 0.00% | ≤1 per chain |
 
+![Final Ramachandran Plot](ramachandran_final.png)
+
 ---
 
 ## 6.0 Conclusion
 The Robetta model refined via GalaxyRefine yielded the best overall structural integrity. The refinement successfully brought the **Ramachandran favored region to 94.07%**, eliminated all geometric outliers (**0 outliers**), and achieved **99% favored rotamers**. The combination of high ERRAT and Verify 3D scores, coupled with the resolution of unfavorable phi and psi angles, confirms this as a highly reliable 3D homology model for the Wheat virus Q Movement protein TGB2.
+
+![Final Refined PDB Structure](final_structure.png)
